@@ -17,18 +17,18 @@ export default function Home() {
       <Navbar />
       <main className="pt-[20rem] xl:mx-[10rem]">
         <div className="flex justify-between items-center mb-[40vh] ">
-          <div className="xl:w-[29rem] xs:text-center xl:ml-[3.5rem]">
+          <div className="xl:w-[29rem] xs:text-center md:text-center xl:ml-[3.5rem]">
             <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
               Gerencie seu Servidor com <br /> eficiencia tudo em so um
             </h4>
-            <p className="text-base text-gray-300 text-pretty my-2">
+            <p className="text-base text-gray-300 text-balance my-2">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Aspernatur delectus corrupti nostrum veniam optio laudantium
               beatae.
             </p>
             <Button>Me Adicione</Button>
           </div>
-          <div className="mr-[9rem] xs:hidden">
+          <div className="xl:block mr-[9rem] hidden">
             <Image
               src="https://cdn.discordapp.com/avatars/1067532640594448414/bd5fdf1aed032f2fdee5c515cfe7a8fb.png"
               width={164}
@@ -46,7 +46,7 @@ export default function Home() {
             <p className="text-base text-gray-300 text-pretty my-2">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             </p>
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex justify-center items-center gap-4 xs:block">
               <CardFeature
                 icon={<FaComputer size={40} />}
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
         <div id="about" className="flex justify-center items-center gap-5rem ">
-          <div className="xs:hidden">
+          <div className="xs:hidden md:hidden">
             <Image
               src="https://cdn.discordapp.com/avatars/1067532640594448414/bd5fdf1aed032f2fdee5c515cfe7a8fb.png"
               width={238}
@@ -78,7 +78,7 @@ export default function Home() {
               alt="icon logo"
             />
           </div>
-          <div className="bg-white shadow-[0_0_15px_4px_rgb(255,255,255)] rounded-xl text-black xl:w-[36rem] xs:w-[23.8rem]">
+          <div className="bg-white shadow-[0_0_15px_4px_rgb(255,255,255)] rounded-xl text-black xl:w-[36rem] w-[23.8rem]">
             <div className="mx-8 my-2">
               <div>
                 <h4 className="scroll-m-20 text-2xl font-semibold tracking-tight">

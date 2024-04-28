@@ -8,7 +8,7 @@ interface props {
 
 export function CardFeature(item: props) {
   return (
-    <div className="w-[20rem]">
+    <div className="w-[20rem] xs:mt-8 xs:m-auto">
       <div className="">
         <div className="flex items-center justify-center bg-gray-500 bg-opacity-45 shadow-[0_0_5px_5px_rgba(107,114,128,0.45)] w-5rem h-5rem  m-auto rounded-full ">
           <div className="flex">{item.icon}</div>
