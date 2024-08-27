@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -8,17 +7,17 @@ export function Footer() {
   const { push } = useRouter();
 
   return (
-    <footer className="xl:mx-5rem sticky pt-10rem bottom-0 start-0 rounded-lg shadow m-4">
+    <footer className=" text-white rounded-lg shadow m-4">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="xl:flex items-center justify-between">
           <div>
             <Link
               href="/"
-              className="scroll-m-20 text-xl font-semibold tracking-tight hover:text-gray-400 hover:transition-all hover:ease-out"
+              className="scroll-m-20 text-xl font-semibold tracking-tight hover:text-gray-400 transition-all ease-out"
             >
               Discord Bot
             </Link>
-            <p className="text-base font-medium text-balance xl:w-[25rem] w-full text-gray-500">
+            <p className="text-base font-medium xl:w-[25rem] w-full text-gray-400 mt-2">
               A modal dialog that interrupts the user with important content and
               expects a response.
             </p>
@@ -31,7 +30,7 @@ export function Footer() {
             </li>
             <li>
               <Link href="#" className="hover:underline me-4 md:me-6">
-                Politicas
+                Políticas
               </Link>
             </li>
             <li>
@@ -46,12 +45,12 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <hr className="my-2 border-gray-200 opacity-40 xs:mx-auto" />
-        <span className="block text-sm xs:text-center text-gray-400">
+        <hr className="my-4 border-gray-700 opacity-40" />
+        <span className="block text-sm text-center text-gray-400">
           © {new Date().getFullYear()}
-          <a href="/" className="hover:underline ml-1">
-            Discord bot™
-          </a>
+          <Link href="/" className="hover:underline ml-1">
+            Discord Bot™
+          </Link>
           . Todos os Direitos Reservados.
         </span>
       </div>
